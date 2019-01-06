@@ -7,7 +7,7 @@ namespace Scheduler.WebAPI.Library.Models
     {
         public User()
         {
-            Event = new HashSet<Event>();
+            Events = new HashSet<Event>();
         }
 
         public int Id { get; set; }
@@ -18,6 +18,6 @@ namespace Scheduler.WebAPI.Library.Models
         public string LastName { get; set; }
         public string Email { get; set; }
 
-        public ICollection<Event> Event { get; set; }
+        public ICollection<Event> Events { get; set; }
     }
 }

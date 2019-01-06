@@ -49,7 +49,7 @@ namespace Scheduler.WebAPI.Library.DbContexts
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.HostUser)
-                    .WithMany(p => p.Event)
+                    .WithMany(p => p.Events)
                     .HasForeignKey(d => d.HostUserId);
             });
 
